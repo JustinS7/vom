@@ -152,7 +152,7 @@ img {
 
 /* Main event*/
 .hero {
-  background: url(/dist/Images/pikwizard-road-woods-forest.jpg) center/cover;
+  background: url(/dist/Images/sandra-tenschert-mSe9gYF0Q2g-unsplash.jpg);
   background-color: black;
   opacity: 1;
   height: 100vh;
@@ -168,7 +168,8 @@ img {
   padding: 0 20px; }
 
 .hero .content h1 {
-  font-size: 55px; }
+  font-size: 55px;
+  margin-bottom: 1rem; }
 
 .hero .content p {
   text-align: center;
