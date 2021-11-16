@@ -457,4 +457,5 @@ img {
 @media (max-width: 770px) {
   .btn-new {
     font-size: 20px;
-    left: 10px; } }
+    left: 10px;
+    top: -50px; } }
