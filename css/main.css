@@ -159,12 +159,6 @@ img {
   position: relative;
   color: #dddddd; }
 
-.hero2 {
-  opacity: 1;
-  height: 75vh;
-  position: relative;
-  color: #dddddd; }
-
 .hero .content {
   display: flex;
   flex-direction: column;
@@ -201,10 +195,10 @@ img {
   font-size: 12px;
   font-family: "Bebas Neue", cursive;
   margin: 45px;
-  padding: 1.1rem;
+  padding: 2rem;
   border-radius: 30%;
   position: absolute;
-  top: 200px;
+  top: 300px;
   display: inline-block;
   background: url(/dist/Images/tim-johnson-ywQWYD7K6Mw-unsplash.jpg);
   justify-content: center;
@@ -216,14 +210,14 @@ img {
   z-index: 2; }
 
 .bio-2 {
-  font-size: 17px;
+  font-size: 20px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   outline: 5px solid white;
   color: white;
   line-height: 8px;
   font-family: "Dancing Script", cursive;
   margin: 45px;
-  padding: 1.3rem;
+  padding: 2rem;
   border-radius: 30%;
   position: absolute;
   top: 200px;
@@ -238,14 +232,14 @@ img {
   z-index: 2; }
 
 .bio-3 {
-  font-size: 14px;
+  font-size: 18px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   outline: 5px solid white;
   color: rgba(255, 255, 255, 0.904);
   line-height: 8px;
   font-family: "Dancing Script", cursive;
   margin: 45px;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 30%;
   position: absolute;
   top: 200px;
@@ -266,7 +260,7 @@ img {
   font-family: "Bebas Neue", cursive;
   line-height: 8px;
   margin: 45px;
-  padding: 1.3rem;
+  padding: 1.5rem;
   border-radius: 30%;
   position: absolute;
   top: 200px;
@@ -339,7 +333,7 @@ img {
 /* Buttons */
 .btn-new {
   position: relative;
-  left: 550px;
+  left: 690px;
   display: inline-block;
   padding: 15px 30px;
   color: white;
