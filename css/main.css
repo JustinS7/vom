@@ -85,7 +85,8 @@ html.dark {
   position: absolute;
   top: 170px;
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+ 1px 1px 0 #000; }
 
 .date .circle {
   border-radius: 50%;
@@ -152,7 +153,6 @@ img {
 
 /* Main event*/
 .hero {
-  background: url(/dist/Images/pikwizard-road-woods-forest.jpg) center/cover;
   background-color: black;
   opacity: 1;
   height: 100vh;
@@ -160,6 +160,7 @@ img {
   color: #dddddd; }
 
 .hero .content {
+  background: url(/dist/Images/pikwizard-road-woods-forest.jpg) center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,7 +212,8 @@ img {
 
 .bio-2 {
   font-size: 20px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+ 1px 1px 0 #000;
   outline: 5px solid white;
   color: white;
   line-height: 8px;
@@ -233,7 +235,8 @@ img {
 
 .bio-3 {
   font-size: 18px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+ 1px 1px 0 #000;
   outline: 5px solid white;
   color: rgba(255, 255, 255, 0.904);
   line-height: 8px;
@@ -255,7 +258,8 @@ img {
 
 .bio-4 {
   outline: 5px solid white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+ 1px 1px 0 #000;
   font-size: 11px;
   font-family: "Bebas Neue", cursive;
   line-height: 8px;
