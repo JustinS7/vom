@@ -443,3 +443,18 @@ img {
 
 #contact h2 {
   color: white; }
+
+@media (max-width: 1400px) {
+  .bio-2 {
+    display: none; }
+  .bio-3 {
+    display: none; }
+  .bio-4 {
+    display: none; }
+  .bio {
+    display: none; } }
+
+@media (max-width: 770px) {
+  .btn-new {
+    font-size: 20px;
+    left: 10px; } }
