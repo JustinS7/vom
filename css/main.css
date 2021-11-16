@@ -193,6 +193,7 @@ img {
 /* BIO */
 .bio {
   outline: 5px solid white;
+  color: white;
   font-size: 12px;
   font-family: "Bebas Neue", cursive;
   margin: 45px;
