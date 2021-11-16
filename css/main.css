@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0; }
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  background: black;
+  line-height: 1.6; }
+
+html {
+  transition: all 0.5s ease-in; }
+
+html.dark {
+  background-color: black;
+  color: rgba(255, 255, 255, 0); }
+
+.toggle {
+  display: none;
+  font-size: 23px;
+  outline: 5px solid white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  background-color: Black;
+  color: white;
+  border: 1;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px;
+  right: 735px; }
+
+.toggle:focus {
+  outline: none; }
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.clock {
+  position: absolute;
+  top: 100px;
+  width: 200px;
+  height: 200px; }
+
+.needle {
+  background-color: Black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in; }
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+  background-color: #e74c3c; }
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  background-color: #e74c3c; }
+
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  background-color: #e74c3c; }
+
+.time {
+  font-size: 60px;
+  margin: 100px;
+  position: absolute;
+  top: 340px;
+  color: white; }
+
+.date {
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 170px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.date .circle {
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 18px; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2; }
+
+.text-primary {
+  color: white;
+  height: 200px;
+  width: 200px; }
+
+p {
+  margin: 10px 0; }
+
+img {
+  width: 100%; }
+
+/* Nav Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px; }
+
+.navbar .top {
+  background: transparent; }
+
+.navbar a {
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px; }
+
+.navbar a:hover {
+  border-bottom: rgba(139, 94, 26, 0.726) 2px solid; }
+
+.navbar ul {
+  display: flex; }
+
+/* Main event*/
+.hero {
+  background: url(/dist/Images/pikwizard-road-woods-forest.jpg) center/cover;
+  background-color: black;
+  opacity: 1;
+  height: 100vh;
+  position: relative;
+  color: #dddddd; }
+
+.hero2 {
+  opacity: 1;
+  height: 75vh;
+  position: relative;
+  color: #dddddd; }
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px; }
+
+.hero .content h1 {
+  font-size: 55px; }
+
+.hero .content p {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 20px 0 30px; }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); }
+
+.hero * {
+  z-index: 7; }
+
+/* BIO */
+.bio {
+  outline: 5px solid white;
+  font-size: 12px;
+  font-family: "Bebas Neue", cursive;
+  margin: 45px;
+  padding: 1.1rem;
+  border-radius: 30%;
+  position: absolute;
+  top: 200px;
+  display: inline-block;
+  background: url(/dist/Images/tim-johnson-ywQWYD7K6Mw-unsplash.jpg);
+  justify-content: center;
+  text-align: center;
+  top: 250px;
+  right: 270px;
+  max-width: 200px;
+  box-shadow: black;
+  z-index: 2; }
+
+.bio-2 {
+  font-size: 17px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  outline: 5px solid white;
+  color: white;
+  line-height: 8px;
+  font-family: "Dancing Script", cursive;
+  margin: 45px;
+  padding: 1.3rem;
+  border-radius: 30%;
+  position: absolute;
+  top: 200px;
+  display: inline-block;
+  background: url(/dist/Images/lukasz-szmigiel-2ShvY8Lf6l0-unsplash.jpg) center/cover;
+  justify-content: center;
+  text-align: center;
+  top: 50px;
+  left: 270px;
+  max-width: 200px;
+  box-shadow: black;
+  z-index: 2; }
+
+.bio-3 {
+  font-size: 14px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  outline: 5px solid white;
+  color: rgba(255, 255, 255, 0.904);
+  line-height: 8px;
+  font-family: "Dancing Script", cursive;
+  margin: 45px;
+  padding: 1rem;
+  border-radius: 30%;
+  position: absolute;
+  top: 200px;
+  display: inline-block;
+  background: url(/dist/Images/kourosh-qaffari-RrhhzitYizg-unsplash.jpg) center/cover;
+  justify-content: center;
+  text-align: center;
+  top: 180px;
+  left: 20px;
+  max-width: 200px;
+  box-shadow: black;
+  z-index: 2; }
+
+.bio-4 {
+  outline: 5px solid white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 11px;
+  font-family: "Bebas Neue", cursive;
+  line-height: 8px;
+  margin: 45px;
+  padding: 1.3rem;
+  border-radius: 30%;
+  position: absolute;
+  top: 200px;
+  display: inline-block;
+  background: url(/dist/Images/josh-hild-jdTdvF6fDus-unsplash.jpg) center/cover;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  top: 80px;
+  right: 160px;
+  max-width: 400px;
+  z-index: 2; }
+
+.grow {
+  transition: all 0.2s ease-in-out; }
+
+.grow:hover {
+  transform: scale(1.1); }
+
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100%; }
+
+.contact {
+  background-color: Black; }
+
+/* Callback Form */
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+  background: Black; }
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px; }
+
+.callback-form .form-control {
+  margin: 15px; }
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: white 1px solid; }
+
+.callback-form input:focus {
+  outline-color: #13556b; }
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  background-color: Black; }
+
+.footer a {
+  color: white; }
+
+.footer a:hover {
+  color: #5a370f; }
+
+.footer .social > * {
+  margin-right: 30px; }
+
+/* Buttons */
+.btn-new {
+  position: relative;
+  left: 550px;
+  display: inline-block;
+  padding: 15px 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s; }
+  .btn-new:hover {
+    color: white;
+    background: #5a370f;
+    box-shadow: 0 0 10px #5a370f, 0 0 40px #5a370f, 0 0 80px #5a370f; }
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: rgba(107, 74, 25, 0.726);
+  border: none;
+  border-radius: 5px; }
+
+.btn:hover {
+  opacity: 0.9; }
+
+/* Flex Items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%; }
+
+.flex-items > div {
+  padding: 20px; }
+
+/* Flex Columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse; }
+
+.flex-columns .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1; }
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%; }
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px; }
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100; }
+
+.flex-columns h4 {
+  margin-bottom: 10px; }
+
+.flex-columns p {
+  margin: 20px 0; }
+
+/* Section Header */
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0; }
+
+.section-padding {
+  padding: 20px 20px 40px; }
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  flex: wrap;
+  padding: 4px; }
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px; }
+
+#contact h2 {
+  color: white; }
