@@ -201,7 +201,7 @@ img {
   position: absolute;
   top: 300px;
   display: inline-block;
-  background: url(/Images/tim-johnson-ywQWYD7K6Mw-unsplash.jpg);
+  background: transparent;
   justify-content: center;
   text-align: center;
   top: 250px;
@@ -223,7 +223,7 @@ img {
   position: absolute;
   top: 200px;
   display: inline-block;
-  background: url(/Images/lukasz-szmigiel-2ShvY8Lf6l0-unsplash.jpg) center/cover;
+  background: transparent;
   justify-content: center;
   text-align: center;
   top: 50px;
@@ -245,7 +245,7 @@ img {
   position: absolute;
   top: 200px;
   display: inline-block;
-  background: url(/Images/kourosh-qaffari-RrhhzitYizg-unsplash.jpg) center/cover;
+  background: transparent;
   justify-content: center;
   text-align: center;
   top: 180px;
@@ -266,7 +266,7 @@ img {
   position: absolute;
   top: 200px;
   display: inline-block;
-  background: url(/Images/josh-hild-jdTdvF6fDus-unsplash.jpg) center/cover;
+  background: transparent;
   color: white;
   justify-content: center;
   text-align: center;
